@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/kidsgallery-logo.jpg";
+import logo from "../../../assets/logo-no-background.svg";
 
 const NavBar = () => {
   return (
@@ -27,26 +27,42 @@ const NavBar = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "default")}
+              to="/"
+            >
               <a>Home</a>
             </NavLink>
-            <NavLink>
+            <NavLink
+              to="/alltoys"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
               <a>All Toys</a>
             </NavLink>
-            <NavLink>
+            <NavLink
+              to="/mytoys"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
               <a>My Toys</a>
             </NavLink>
-            <NavLink>
+            <NavLink
+              to="/addAtoy"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
               <a>Add A Toy</a>
             </NavLink>
-            <NavLink>
+            <NavLink
+              to="/blogs"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
               <a>Blogs</a>
             </NavLink>
           </ul>
         </div>
-        <div className=" normal-case font-bold text-xl">
+
+        <Link>
           <img className="w-[100px]" src={logo} alt="" />
-        </div>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-4">
@@ -68,7 +84,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a>Profile</a>
+        <img src="" alt="" />
       </div>
     </div>
   );
