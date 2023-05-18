@@ -20,31 +20,41 @@ const ShopCategory = () => {
   return (
     <div className="mt-5 mb-5">
       <h2 className="text-center text-3xl font-bold">Our Special Category</h2>
-      <Tabs className="text-center">
-        <TabList className="gap-4">
-          <Tab onClick={() => setCategory("Stuffed animal cat")}>
-            Stuffed animal cat
+      <Tabs className="text-center mt-8">
+        <TabList className="gap-10">
+          <Tab onClick={() => setCategory("Stuffed Animal")}>
+            <h2 className="text-2xl font-bold bg-orange-300">
+              Stuffed animal cat
+            </h2>
           </Tab>
-          <Tab onClick={() => setCategory("Bird Toy")}>Bird Toy</Tab>
-          <Tab onClick={() => setCategory("Fish toy")}>Fish toy</Tab>
+          <Tab onClick={() => setCategory("Bird Toy")}>
+            <h2 className="text-2xl font-bold bg-orange-300">Bird Toy</h2>
+          </Tab>
+          <Tab onClick={() => setCategory("Reptile toy")}>
+            <h2 className="text-2xl font-bold bg-orange-300">Fish toy</h2>
+          </Tab>
         </TabList>
 
         <TabPanel>
-          <div className="md:flex lg:flex">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
             {toys.map((toy) => (
               <Teddy key={toy.name} toy={toy}></Teddy>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
-          {toys.map((toy) => (
-            <Teddy key={toy.name} toy={toy}></Teddy>
-          ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+            {toys.map((toy) => (
+              <Teddy key={toy.name} toy={toy}></Teddy>
+            ))}
+          </div>
         </TabPanel>
         <TabPanel>
-          {toys.map((toy) => (
-            <Teddy key={toy.name} toy={toy}></Teddy>
-          ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+            {toys.map((toy) => (
+              <Teddy key={toy.name} toy={toy}></Teddy>
+            ))}
+          </div>
         </TabPanel>
       </Tabs>
     </div>

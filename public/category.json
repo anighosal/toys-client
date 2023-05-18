@@ -1,7 +1,7 @@
 [
     {
         "name": "Stuffed animal cat",
-        "img": "https://i.ibb.co/nzZCMkZ/img-2.png",
+        "img": "https://imgtr.ee/images/2023/05/18/2kyHz.jpg",
         "price": 500,
         "rating": 4.5,
         "subCategory": "Stuffed Animal",
@@ -9,26 +9,26 @@
         "quantity": 10
     },
     {
-        "name": "Rubber ball dog toy",
-        "img": "https://m.media-amazon.com/images/I/91ysMAl+xnL._SL1500_.jpg",
+        "name": "Steiff Original Teddy Bear",
+        "img": "https://imgtr.ee/images/2023/05/18/2k2Zn.jpg",
         "price": 522,
         "rating": 5,
-        "subCategory": "Ball",
-        "seller": "Chewy",
+        "subCategory": "Stuffed Animal",
+        "seller": "FAO Schwarz",
         "quantity": 5
     },
     {
         "name": "Tennis ball dog toy",
-        "img": "https://m.media-amazon.com/images/I/619-rnX8QEL._SL1500_.jpg",
+        "img": "https://imgtr.ee/images/2023/05/18/2kSRY.jpg",
         "price": 329,
         "rating":3,
-        "subCategory": "Ball",
+        "subCategory": "Stuffed Animal",
         "seller": "Petco",
         "quantity": 10
     },
     {
         "name": "Bird Toy",
-        "img": "https://i.ibb.co/0FPgq9R/img-1.png",
+        "img": "https://imgtr.ee/images/2023/05/18/2kE4A.jpg",
         "price": 200,
         "rating": 4.5,
         "subCategory": "Bird Toy",
@@ -37,46 +37,46 @@
     },
     {
         "name": "Reptile toy",
-        "img": "https://m.media-amazon.com/images/I/7188KDb7UYL._SL1500_.jpg",
+        "img": "https://imgtr.ee/images/2023/05/18/2kcg2.jpg",
         "price": 122,
         "rating": 5,
-        "subCategory": "Reptile toy",
+        "subCategory": "Bird Toy",
         "seller": "Reptile toy",
         "quantity": 3
     },
     {
         "name": "Small animal toy",
-        "img": "https://m.media-amazon.com/images/I/41YiprE0SEL.jpg",
+        "img": "https://imgtr.ee/images/2023/05/18/2kFvz.jpg",
         "price": 899,
         "rating": 5,
-        "subCategory": "Small animal toy",
+        "subCategory": "Bird Toy",
         "seller": "Pet Supplies Plus",
         "quantity": 6
     },
     {
         "name": "Fish toy",
-        "img": "https://i.ibb.co/CH3XDNH/img-8.png",
+        "img": "https://imgtr.ee/images/2023/05/18/2kfxx.jpg",
         "price": 220,
         "rating": 4,
-        "subCategory": "Fish toy",
+        "subCategory": "Reptile toy",
         "seller": "Petco",
         "quantity": 15
     },
     {
         "name": "Build-A-Bear Classic Teddy Bear",
-        "img": "https://m.media-amazon.com/images/I/510+4VCdBtL._SL1001_.jpg",
+        "img": "https://imgtr.ee/images/2023/05/18/2kijJ.jpg",
         "price": 506,
         "rating": 4.5,
-        "subCategory": "Stuffed Animal",
+        "subCategory": "Reptile toy",
         "seller": "Build-A-Bear Workshop",
         "quantity": 9
     },
     {
         "name": "Melissa & Doug Unicorn Puzzle",
-        "img": "https://i.ibb.co/4F6hzLX/img-9.png",
+        "img": "https://imgtr.ee/images/2023/05/18/2k3yi.jpg",
         "price": 965,
         "rating": 4.1,
-        "subCategory": "Puzzle",
+        "subCategory": "Reptile toy",
         "seller": "Amazon",
         "quantity": 7
     }
