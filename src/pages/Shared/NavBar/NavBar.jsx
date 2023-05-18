@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/logo-no-background.svg";
+import { FaUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -90,7 +91,10 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <img src="" alt="" />
+        <NavLink to="/auth/login">Login</NavLink>
+        <Link>
+          <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
+        </Link>
       </div>
     </div>
   );
