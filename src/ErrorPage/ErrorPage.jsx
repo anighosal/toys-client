@@ -1,10 +1,14 @@
 import React from "react";
 import error from "../../../my-11th-work/src/assets/error.jpg";
+import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
     <div>
-      <img className="text-center" src={error} alt="" />
+      <img className="w-[600px]" src={error} alt="" />
+      <Link to="/">
+        <button className="btn btn-error">Back to Home</button>
+      </Link>
     </div>
   );
 };
