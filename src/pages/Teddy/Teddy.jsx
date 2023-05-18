@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Teddy = ({ toy }) => {
   const { name, price, rating, img } = toy;
@@ -13,7 +14,9 @@ const Teddy = ({ toy }) => {
         <h6 className="text-left text-red-500">Rating: {rating}</h6>
 
         <div className="card-actions justify-center btn-block">
-          <button className="btn btn-block bg-red-700">View Details</button>
+          <Link>
+            <button className="btn btn-block bg-red-700">View Details</button>
+          </Link>
         </div>
       </div>
     </div>
