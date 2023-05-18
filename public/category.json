@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Stuffed animal cat",
+        "img": "https://i.ibb.co/nzZCMkZ/img-2.png",
+        "price": 500,
+        "rating": 4.5,
+        "subCategory": "Stuffed Animal",
+        "seller": "Amazon",
+        "quantity": 10
+    },
+    {
+        "name": "Rubber ball dog toy",
+        "img": "https://m.media-amazon.com/images/I/91ysMAl+xnL._SL1500_.jpg",
+        "price": 522,
+        "rating": 5,
+        "subCategory": "Ball",
+        "seller": "Chewy",
+        "quantity": 5
+    },
+    {
+        "name": "Tennis ball dog toy",
+        "img": "https://m.media-amazon.com/images/I/619-rnX8QEL._SL1500_.jpg",
+        "price": 329,
+        "rating":3,
+        "subCategory": "Ball",
+        "seller": "Petco",
+        "quantity": 10
+    },
+    {
+        "name": "Bird Toy",
+        "img": "https://i.ibb.co/0FPgq9R/img-1.png",
+        "price": 200,
+        "rating": 4.5,
+        "subCategory": "Bird Toy",
+        "seller": "Bird Store",
+        "quantity": 12
+    },
+    {
+        "name": "Reptile toy",
+        "img": "https://m.media-amazon.com/images/I/7188KDb7UYL._SL1500_.jpg",
+        "price": 122,
+        "rating": 5,
+        "subCategory": "Reptile toy",
+        "seller": "Reptile toy",
+        "quantity": 3
+    },
+    {
+        "name": "Small animal toy",
+        "img": "https://m.media-amazon.com/images/I/41YiprE0SEL.jpg",
+        "price": 899,
+        "rating": 5,
+        "subCategory": "Small animal toy",
+        "seller": "Pet Supplies Plus",
+        "quantity": 6
+    },
+    {
+        "name": "Fish toy",
+        "img": "https://i.ibb.co/CH3XDNH/img-8.png",
+        "price": 220,
+        "rating": 4,
+        "subCategory": "Fish toy",
+        "seller": "Petco",
+        "quantity": 15
+    },
+    {
+        "name": "Build-A-Bear Classic Teddy Bear",
+        "img": "https://m.media-amazon.com/images/I/510+4VCdBtL._SL1001_.jpg",
+        "price": 506,
+        "rating": 4.5,
+        "subCategory": "Stuffed Animal",
+        "seller": "Build-A-Bear Workshop",
+        "quantity": 9
+    },
+    {
+        "name": "Melissa & Doug Unicorn Puzzle",
+        "img": "https://i.ibb.co/4F6hzLX/img-9.png",
+        "price": 965,
+        "rating": 4.1,
+        "subCategory": "Puzzle",
+        "seller": "Amazon",
+        "quantity": 7
+    }
+]
