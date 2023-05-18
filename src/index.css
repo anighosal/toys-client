@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
-/* .active{
-    color:rgb(230, 27, 27)
-} */
+.active{
+    color:rgb(203, 122, 56)
+}
+

@@ -66,10 +66,16 @@ const NavBar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-4">
-          <NavLink>
-            <a>Home</a>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "default")}
+            to="/"
+          >
+            Home
           </NavLink>
-          <NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "default")}
+            to="/"
+          >
             <a>All Toys</a>
           </NavLink>
           <NavLink>
