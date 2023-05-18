@@ -1,8 +1,9 @@
 import React from "react";
-import { FaStarHalf } from "react-icons/fa";
+
 import img1 from "../../../assets/client1.jpg";
 import img2 from "../../../assets/client2.jpg";
 import img3 from "../../../assets/client3.jpg";
+import Ratings from "../../Ratings/Ratings";
 
 const CustomerView = () => {
   return (
@@ -22,7 +23,7 @@ const CustomerView = () => {
             </p>
             <h2 className="font-bold text-center text-3xl">Smith</h2>
             <div className="card-actions justify-center">
-              <FaStarHalf></FaStarHalf>
+              <Ratings></Ratings>
             </div>
           </div>
         </div>
@@ -38,8 +39,8 @@ const CustomerView = () => {
               nesciunt, voluptas quae fuga quis adipisci?{" "}
             </p>
             <h2 className="font-bold text-center text-3xl">Sandy</h2>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+            <div className="card-actions justify-center">
+              <Ratings></Ratings>
             </div>
           </div>
         </div>
@@ -55,8 +56,8 @@ const CustomerView = () => {
               nesciunt, voluptas quae fuga quis adipisci?{" "}
             </p>
             <h2 className="font-bold text-center text-3xl">john</h2>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+            <div className="card-actions justify-center">
+              <Ratings></Ratings>
             </div>
           </div>
         </div>
