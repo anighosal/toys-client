@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ErrorPage = () => {
   return (
     <div>
-      <img className="w-[600px]" src={error} alt="" />
+      <img className="w-[1140px]" src={error} alt="" />
       <Link to="/">
         <button className="btn btn-error">Back to Home</button>
       </Link>
