@@ -1,5 +1,6 @@
 import React from "react";
 import login from "../../assets/login.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const handleLogin = (event) => {
@@ -48,6 +49,12 @@ const Login = () => {
                 />
               </div>
             </form>
+            <p>
+              Not registerd?{" "}
+              <Link className="text-red-600 font-bold " to="/auth/register">
+                Create an account
+              </Link>{" "}
+            </p>
           </div>
         </div>
       </div>
