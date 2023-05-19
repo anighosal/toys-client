@@ -16,11 +16,15 @@ const AllToysCard = ({ toys }) => {
         <p>Available Quantity: {quantity}</p>
         <p>Price: {price}</p>
         <p>Rating: {rating}</p>
-        <div className="card-actions justify-center">
-          <button className="btn btn-primary">Buy Now</button>
+        <div className="card-actions justify-center flex">
+          <Link to={`/book/${_id}`}>
+            <button className="btn btn-error">Book Now</button>
+          </Link>
 
           <Link to={`/toy/${_id}`}>
-            <FaArrowRight></FaArrowRight>
+            <button className="btn btn-error">
+              <FaArrowRight></FaArrowRight>
+            </button>
           </Link>
         </div>
       </div>

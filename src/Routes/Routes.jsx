@@ -8,11 +8,12 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AllToys from "../pages/AllToys/AllToys";
 import MyToys from "../pages/MyToys/MyToys";
-import AddAToys from "../pages/AddAToys";
+
 import ToyDetails from "../pages/ToyDetails/ToyDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import PrivateRoute from "./PrivateRoute";
 import Toy from "../pages/Toy/Toy";
+import AddAToys from "../pages/AddAToys/AddAToys";
 
 const router = createBrowserRouter([
   {

@@ -107,11 +107,12 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {user?.email && (
-          <Link>
-            <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
-          </Link>
+        {user?.photoURL ? (
+          <img className="rounded-full w-14 h-14" src={user?.photoURL} alt="" />
+        ) : (
+          <FaUserCircle></FaUserCircle>
         )}
+
         {user ? (
           <button onClick={handleLogOut}>Log out</button>
         ) : (
