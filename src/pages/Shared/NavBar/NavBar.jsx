@@ -5,7 +5,12 @@ import { FaUserCircle } from "react-icons/fa";
 import { AuthContext } from "../../../Providers/AuthProvider";
 
 const NavBar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -102,10 +107,16 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <NavLink to="/auth/login">Login</NavLink>
-        <Link>
-          <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
-        </Link>
+        {user?.email && (
+          <Link>
+            <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
+          </Link>
+        )}
+        {user ? (
+          <button onClick={handleLogOut}>Log out</button>
+        ) : (
+          <NavLink to="/auth/login">Login</NavLink>
+        )}
       </div>
     </div>
   );

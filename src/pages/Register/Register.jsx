@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import login from "../../assets/login.svg";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { getAuth, updateProfile } from "firebase/auth";
 
 const Register = () => {
+  const [registerError, setRegisterError] = useState("");
   const { createUser } = useContext(AuthContext);
   const handleRegister = (event) => {
     event.preventDefault();
@@ -16,10 +18,24 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        const createdUser = result.user;
+        console.log(createdUser);
+
+        const auth = getAuth();
+        updateProfile(auth.currentUser, {
+          displayName: name,
+          photoURL: photo,
+        })
+          .then(() => {})
+          .catch((error) => {});
+        setRegisterError("");
+        event.target.reset();
+        setSuccess("User has been created succesfully");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error.massesge);
+        setRegisterError(error.massesge);
+      });
   };
 
   return (

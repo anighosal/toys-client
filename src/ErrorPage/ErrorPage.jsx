@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <div>
-      <img className="w-[1140px]" src={error} alt="" />
+    <div className="mt-9">
+      <img className="w-[600px] mx-auto" src={error} alt="" />
       <Link to="/">
         <button className="btn btn-error">Back to Home</button>
       </Link>

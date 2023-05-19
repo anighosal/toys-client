@@ -12,9 +12,9 @@ const ToyDetails = () => {
       console.log(data);
     });
   return (
-    <div className="card card-side w-1/2 center bg-base-100 shadow-xl">
+    <div className="card card-side w-1/2 mx-auto mt-8 bg-base-100 shadow-xl">
       <figure>
-        <img src={img} alt="Movie" />
+        <img className="pl-2" src={img} alt="Movie" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">Name: {name}</h2>

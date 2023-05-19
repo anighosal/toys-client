@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 import login from "../../assets/login.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const location = useLocation();
+  console.log("login page", location);
+  const navigate = useNavigate();
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -13,8 +16,9 @@ const Login = () => {
     console.log(email, password);
     signIn(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        navigate("/");
       })
       .catch((error) => console.log(error));
   };
@@ -33,8 +37,9 @@ const Login = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="email"
+                  name="email"
                   className="input input-bordered"
                 />
               </div>
