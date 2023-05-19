@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const AllToysCard = ({ toys }) => {
@@ -15,9 +16,13 @@ const AllToysCard = ({ toys }) => {
         <p>Available Quantity: {quantity}</p>
         <p>Price: {price}</p>
         <p>Rating: {rating}</p>
-        <Link className="justify-center">
-          <button className="btn btn-block bg-red-700">View Details</button>
-        </Link>
+        <div className="card-actions justify-center">
+          <button className="btn btn-primary">Buy Now</button>
+
+          <Link to={`/toy/${_id}`}>
+            <FaArrowRight></FaArrowRight>
+          </Link>
+        </div>
       </div>
     </div>
   );
