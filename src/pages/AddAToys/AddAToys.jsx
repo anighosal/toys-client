@@ -8,7 +8,7 @@ const AddAToys = () => {
   const handleBookService = (event) => {
     event.preventDefault();
     const form = event.target;
-    const name = form.name.value;
+    const title = form.name.value;
     const seller = form.seller.value;
     const email = form.email.value;
 
@@ -18,12 +18,29 @@ const AddAToys = () => {
     const rating = form.rating.value;
     const subCategory = form.subCategory.value;
     const description = form.description.value;
-    const order = {
+    const orders = {
       customerName: name,
       email,
       price,
+      rating,
+      quantity,
+      subCategory,
+      description,
+      photo,
     };
-    console.log(order);
+    console.log(orders);
+
+    fetch("http://localhost:5000/mytoys", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(orders),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
   };
   return (
     <div>
