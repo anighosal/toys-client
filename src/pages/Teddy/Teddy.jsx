@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Teddy = ({ toy }) => {
-  const { name, price, rating, img } = toy;
+  const { _id, name, price, rating, img } = toy;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
@@ -14,7 +14,7 @@ const Teddy = ({ toy }) => {
         <h6 className="text-left text-red-500">Rating: {rating}</h6>
 
         <div className="card-actions justify-center btn-block">
-          <Link>
+          <Link to={`/toyDetails/${_id}`}>
             <button className="btn btn-block bg-red-700">View Details</button>
           </Link>
         </div>

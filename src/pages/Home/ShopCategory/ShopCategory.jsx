@@ -8,7 +8,7 @@ const ShopCategory = () => {
   const [category, setCategory] = useState("Stuffed Animal");
   console.log(toys);
   useEffect(() => {
-    fetch("/category.json")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => {
         if (data.length) {
