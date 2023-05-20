@@ -78,6 +78,7 @@ const UpdateToy = () => {
               type="photoURL"
               name="photo"
               placeholder="photoURL"
+              defaultValue={user?.photoURL}
               className="input input-bordered"
             />
           </div>
@@ -85,7 +86,12 @@ const UpdateToy = () => {
             <label className="label">
               <span className="label-text">Price</span>
             </label>
-            <input type="price" name="price" className="input input-bordered" />
+            <input
+              type="price"
+              name="price"
+              placeholder="price"
+              className="input input-bordered"
+            />
           </div>
           <div className="form-control">
             <label className="label">
@@ -98,27 +104,7 @@ const UpdateToy = () => {
               className="input input-bordered"
             />
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Rating</span>
-            </label>
-            <input
-              type="rating"
-              name="rating"
-              placeholder="rating"
-              className="input input-bordered"
-            />
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Sub Gategory</span>
-            </label>
-            <input
-              type="text"
-              name="subCategory"
-              className="input input-bordered"
-            />
-          </div>
+
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>

@@ -20,8 +20,17 @@ const Blogs = () => {
         local storage or browser memory.
       </p>{" "}
       <br />
-      <h2 className="text-red-500 text2xl font-bold "></h2>
-      <p className="text-blue-400 text-lg font-semibold"></p>
+      <h2 className="text-red-500 text2xl font-bold ">
+        Q: Compare SQL and NoSQL databases?
+      </h2>
+      <p className="text-blue-400 text-lg font-semibold">
+        Ans: .SQL databases are primarily called Relational Databases and NoSQL
+        databases are primarily called non-relational databases SQL databases
+        are vertically scalable most of the situations. On the other hand NoSQL
+        databases are horizontally scalable. SQL databases are table-based but
+        NoSQL databases can be key-value pairs, document-based, graph databases,
+        or wide-column stores
+      </p>
       <br />
       <h2 className="text-red-500 text2xl font-bold "></h2>
       <p className="text-blue-400 text-lg font-semibold"></p>
