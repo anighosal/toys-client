@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
-const AddAToys = () => {
+const UpdateToy = () => {
   const { user } = useContext(AuthContext);
 
   const handleBookService = (event) => {
@@ -44,7 +43,7 @@ const AddAToys = () => {
   };
   return (
     <div>
-      <h2 className="text-center">Add Your Choice: {name}</h2>
+      <h2>hello</h2>
       <form onSubmit={handleBookService}>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="form-control">
@@ -153,4 +152,4 @@ const AddAToys = () => {
   );
 };
 
-export default AddAToys;
+export default UpdateToy;

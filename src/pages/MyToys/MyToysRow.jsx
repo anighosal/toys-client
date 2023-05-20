@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
   const {
@@ -53,14 +54,24 @@ const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
       <td className="text-red-500 font-bold ">{rating}</td>
       <td>{description}</td>
       <th>
-        <button
+        {/* <button
           onClick={() => {
             handleUpdate(_id);
           }}
           className="btn btn-outline btn-success"
         >
           Update
-        </button>
+        </button> */}
+        <Link to={`/toyupdate/${_id}`}>
+          <button
+            // onClick={() => {
+            //   handleUpdate(_id);
+            // }}
+            className="btn btn-outline btn-success"
+          >
+            Update
+          </button>
+        </Link>
       </th>
     </tr>
   );

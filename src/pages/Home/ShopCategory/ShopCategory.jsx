@@ -37,7 +37,7 @@ const ShopCategory = () => {
 
         <TabPanel>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
-            {toys.map((toy) => (
+            {toys.slice(0, 3).map((toy) => (
               <Teddy key={toy.name} toy={toy}></Teddy>
             ))}
           </div>
