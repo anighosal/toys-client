@@ -56,8 +56,19 @@ const Blogs = () => {
         be a better option.
       </p>
       <br />
-      <h2 className="text-red-500 text2xl font-bold "></h2>
-      <p className="text-blue-400 text-lg font-semibold"></p>
+      <h2 className="text-red-500 text2xl font-bold ">
+        What is MongoDB aggregate and how does it work?
+      </h2>
+      <p className="text-blue-400 text-lg font-semibold">
+        Ans: MongoDB aggregation is a process of transforming and summarizing
+        data stored in MongoDB collections. It is a powerful tool that can be
+        used to perform a variety of operations on data, such as grouping
+        documents together, calculating summary statistics, and performing
+        joins. MongoDB aggregation is based on a pipeline of stages. Each stage
+        performs an operation on the input documents and passes the output to
+        the next stage. The final stage in the pipeline produces the desired
+        output.
+      </p>
     </div>
   );
 };

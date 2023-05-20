@@ -30,7 +30,7 @@
         "description":"Classic teddy bear that has been loved by children for generations."
     },
     {
-        "name": "Bird Toy",
+        "name": "Bird",
         "img": "https://imgtr.ee/images/2023/05/18/2kE4A.jpg",
         "price": 200,
         "rating": 4.5,
@@ -40,7 +40,7 @@
         "description":"Lifelike plush tiger that is perfect for pretending to be a big cat."
     },
     {
-        "name": "Reptile toy",
+        "name": "Pink Bird",
         "img": "https://imgtr.ee/images/2023/05/18/2kcg2.jpg",
         "price": 122,
         "rating": 5,
@@ -94,7 +94,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2NHCn.jpg",
         "price": 965,
         "rating": 3.1,
-        "subCategory": "Reptile toy",
+        "subCategory": "Building sets",
         "seller": "Farm Toys",
         "quantity": 7,
         "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
@@ -114,7 +114,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xa30.jpg",
         "price": 400,
         "rating": 5,
-        "subCategory": "Educational Toys",
+        "subCategory": "Interactive toys",
         "seller": "Kids-world",
         "quantity": 12,
         "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
@@ -134,7 +134,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xm82.jpg",
         "price": 150,
         "rating":4.5,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Outdoor toys",
         "seller": "eBay",
         "quantity": 4,
         "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
@@ -144,7 +144,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xNKi.jpg",
         "price": 100,
         "rating":4.3,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Action figures",
         "seller": "AliExpress",
         "quantity": 10,
         "description":"Classic teddy bear that has been loved by children for generations."
@@ -160,11 +160,11 @@
         "description":"Classic teddy bear that has been loved by children for generations."
     },
     {
-        "name": "dionosour kids",
+        "name": "Penguin",
         "img": "https://imgtr.ee/images/2023/05/20/2xAVY.jpg",
         "price": 280,
         "rating":3.7,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Collectible toys",
         "seller": "Barnes & Noble",
         "quantity": 3,
         "description":"Classic teddy bear that has been loved by children for generations."
@@ -174,7 +174,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xC8s.jpg",
         "price": 380,
         "rating":2.7,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Interactive toys",
         "seller": "Barnes & Noble",
         "quantity": 4,
         "description":"Classic teddy bear that has been loved by children for generations."
@@ -184,7 +184,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xEIX.jpg",
         "price": 480,
         "rating":3.7,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Party favors",
         "seller": "Learning Express",
         "quantity":8,
         "description":"Classic teddy bear that has been loved by children for generations."
@@ -194,7 +194,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xuGV.jpg",
         "price": 520,
         "rating":5,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Costumes",
         "seller": "The Disney Store",
         "quantity":9,
         "description":"Classic teddy bear that has been loved by children for generations."
@@ -204,7 +204,7 @@
         "img": "https://imgtr.ee/images/2023/05/20/2xF1l.jpg",
         "price": 930,
         "rating":4,
-        "subCategory": "Animal Figurines",
+        "subCategory": "Building toys",
         "seller": "The Lego Store",
         "quantity":14,
         "description":"Classic teddy bear that has been loved by children for generations."
