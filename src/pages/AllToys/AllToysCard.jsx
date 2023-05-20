@@ -15,7 +15,7 @@ const AllToysCard = ({ toys }) => {
       </td>
       <td className="text-blue-500 font-bold text-lg ">{name}</td>
       <td>{subCategory}</td>
-      <td>{price}</td>
+      <td>$ {price}</td>
       <td>{quantity}</td>
       <td>{seller}</td>
       <td className="text-red-500 ">{rating}</td>

@@ -10,7 +10,7 @@ const CustomerView = () => {
     <div className="mt-5">
       <h2 className="text-center text-3xl font-bold">Our little client</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5">
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
           <figure>
             <img src={img1} alt="Shoes" />
           </figure>
@@ -27,7 +27,7 @@ const CustomerView = () => {
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
           <figure>
             <img src={img2} alt="Shoes" />
           </figure>
@@ -44,7 +44,7 @@ const CustomerView = () => {
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
           <figure>
             <img src={img3} alt="Shoes" />
           </figure>

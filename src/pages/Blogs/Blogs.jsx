@@ -32,8 +32,29 @@ const Blogs = () => {
         or wide-column stores
       </p>
       <br />
-      <h2 className="text-red-500 text2xl font-bold "></h2>
-      <p className="text-blue-400 text-lg font-semibold"></p>
+      <h2 className="text-red-500 text2xl font-bold ">
+        Q: What is express js? What is Nest JS ?
+      </h2>
+      <p className="text-blue-400 text-lg font-semibold">
+        Ans: Express: Express is a very popular framework, and it is used by a
+        wide variety of developers to build all sorts of web applications. It is
+        easy to learn and use, and it provides a robust set of features for
+        building web applications. However, Express is a minimal framework, and
+        it does not provide any built-in support for things like dependency
+        injection or modules. This can make it difficult to build large and
+        complex applications with Express. Nest: Nest is a newer framework, but
+        it is quickly gaining popularity. It is built on top of Express, but it
+        provides a more robust set of features for building scalable,
+        enterprise-grade web applications. Nest supports dependency injection,
+        modules, and other features that make it easier to build large and
+        complex applications. Additionally, Nest has a growing community of
+        developers and a large library of third-party modules. Ultimately, the
+        best framework for you will depend on your specific needs and
+        requirements. If you are looking for a simple and easy-to-use framework,
+        then Express may be a good choice. However, if you are looking for a
+        framework that can support large and complex applications, then Nest may
+        be a better option.
+      </p>
       <br />
       <h2 className="text-red-500 text2xl font-bold "></h2>
       <p className="text-blue-400 text-lg font-semibold"></p>

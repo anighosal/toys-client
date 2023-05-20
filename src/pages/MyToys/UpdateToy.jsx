@@ -4,7 +4,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const UpdateToy = () => {
   const { user } = useContext(AuthContext);
 
-  const handleBookService = (event) => {
+  const handleUpdateService = (event) => {
     event.preventDefault();
     const form = event.target;
 
@@ -14,16 +14,15 @@ const UpdateToy = () => {
     const price = form.price.value;
     const quantity = form.quantity.value;
     const name = form.name.value;
-    const rating = form.rating.value;
-    const subCategory = form.subCategory.value;
+
     const description = form.description.value;
     const orders = {
       customerName: name,
       email,
       price,
-      rating,
+
       quantity,
-      subCategory,
+
       description,
       photo,
     };
@@ -44,7 +43,7 @@ const UpdateToy = () => {
   return (
     <div>
       <h2>hello</h2>
-      <form onSubmit={handleBookService}>
+      <form onSubmit={handleUpdateService}>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="form-control">
             <label className="label">
@@ -54,7 +53,7 @@ const UpdateToy = () => {
               type="text"
               name="title"
               placeholder="title"
-              defaultValue={name}
+              defaultValue={user?.title}
               className="input input-bordered"
             />
           </div>
@@ -78,7 +77,6 @@ const UpdateToy = () => {
               type="photoURL"
               name="photo"
               placeholder="photoURL"
-              defaultValue={user?.photoURL}
               className="input input-bordered"
             />
           </div>
@@ -130,7 +128,7 @@ const UpdateToy = () => {
           <input
             className="btn btn-primary btn-block"
             type="submit"
-            value="Confirm Order"
+            value="Update Confirm"
           />
         </div>
       </form>

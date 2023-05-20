@@ -60,7 +60,6 @@ const MyToys = () => {
           {/* head */}
           <thead>
             <tr>
-              <th>Delete</th>
               <th>Picture</th>
               <th>Name</th>
               <th>title</th>
@@ -69,8 +68,8 @@ const MyToys = () => {
               <th>Email</th>
               <th>Rating</th>
               <th>Details</th>
-
               <th>Update</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>

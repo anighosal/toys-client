@@ -14,10 +14,10 @@ const AllToys = () => {
       <h2 className="text-center text-3xl font-bold text-orange-700">
         Our Toys Collection
       </h2>
-      <div className="overflow-x-auto bg-slate-400 w-full mt-5">
-        <table className="table w-full">
+      <div className="overflow-x-auto bg-slate-400 lg:w-full mt-5">
+        <table className="table lg:w-full">
           {/* head */}
-          <thead>
+          <thead className="">
             <tr>
               <th>Picture</th>
               <th>Name</th>
