@@ -29,6 +29,27 @@ const MyToys = () => {
         });
     }
   };
+
+  const handleUpdate = (id) => {
+    fetch(`http://localhost:5000/mytoys/${id}`, {
+      method: "PATCH",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ status: "update" }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.modifiedCount > 0) {
+          const remaining = bookings.filter((booking) => booking._id !== id);
+          const updated = bookings.find((booking) => booking._id === id);
+          updated.status = "update";
+          const newBookings = [updated, ...remaining];
+          setBookings(newBookings);
+        }
+      });
+  };
   return (
     <div>
       <h2 className="text-center font-bold text-2xl text-purple-600">
@@ -58,6 +79,7 @@ const MyToys = () => {
                 key={booking._id}
                 booking={booking}
                 handleDelete={handleDelete}
+                handleUpdate={handleUpdate}
               ></MyToysRow>
             ))}
           </tbody>

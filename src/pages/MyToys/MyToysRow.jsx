@@ -1,6 +1,6 @@
 import React from "react";
 
-const MyToysRow = ({ booking, handleDelete }) => {
+const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
   const {
     _id,
     customerName,
@@ -53,7 +53,14 @@ const MyToysRow = ({ booking, handleDelete }) => {
       <td className="text-red-500 font-bold ">{rating}</td>
       <td>{description}</td>
       <th>
-        <button className="btn btn-ghost btn-xs">Update</button>
+        <button
+          onClick={() => {
+            handleUpdate(_id);
+          }}
+          className="btn btn-outline btn-success"
+        >
+          Update
+        </button>
       </th>
     </tr>
   );
