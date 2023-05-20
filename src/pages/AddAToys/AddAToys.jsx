@@ -15,6 +15,7 @@ const AddAToys = () => {
     const photo = form.photo.value;
     const price = form.price.value;
     const quantity = form.quantity.value;
+    const name = form.name.value;
     const rating = form.rating.value;
     const subCategory = form.subCategory.value;
     const description = form.description.value;
@@ -53,8 +54,8 @@ const AddAToys = () => {
             </label>
             <input
               type="text"
-              name="name"
-              placeholder="name"
+              name="title"
+              placeholder="title"
               defaultValue={name}
               className="input input-bordered"
             />

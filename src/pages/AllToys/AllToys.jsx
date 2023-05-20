@@ -11,13 +11,30 @@ const AllToys = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-center mt-8 font-bold text-3xl">
-        Kids Gallery Collection
+      <h2 className="text-center text-3xl font-bold text-orange-700">
+        Our Toys Collection
       </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-4">
-        {allToys.map((toys) => (
-          <AllToysCard key={toys._id} toys={toys}></AllToysCard>
-        ))}
+      <div className="overflow-x-auto bg-slate-400 w-full mt-5">
+        <table className="table w-full">
+          {/* head */}
+          <thead>
+            <tr>
+              <th>Picture</th>
+              <th>Name</th>
+              <th>subCategory</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Seller</th>
+              <th>Rating</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {allToys.map((toys) => (
+              <AllToysCard key={toys._id} toys={toys}></AllToysCard>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

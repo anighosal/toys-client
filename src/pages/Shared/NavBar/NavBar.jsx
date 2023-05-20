@@ -86,18 +86,22 @@ const NavBar = () => {
           >
             All Toys
           </NavLink>
-          <NavLink
-            className={({ isActive }) => (isActive ? "active" : "default")}
-            to="/mytoys"
-          >
-            My Toys
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => (isActive ? "active" : "default")}
-            to="/addatoy"
-          >
-            Add A Toy
-          </NavLink>
+          {user && (
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "default")}
+              to="/mytoys"
+            >
+              My Toys
+            </NavLink>
+          )}
+          {user && (
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "default")}
+              to="/addatoy"
+            >
+              Add A Toy
+            </NavLink>
+          )}
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "default")}
             to="/blogs"

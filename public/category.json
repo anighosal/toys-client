@@ -6,7 +6,8 @@
         "rating": 4.5,
         "subCategory": "Stuffed Animal",
         "seller": "Amazon",
-        "quantity": 10
+        "quantity": 10,
+        "description":"Realistic giraffe figure that is perfect for imaginative play"
     },
     {
         "name": "Steiff Original Teddy Bear",
@@ -15,7 +16,8 @@
         "rating": 5,
         "subCategory": "Stuffed Animal",
         "seller": "FAO Schwarz",
-        "quantity": 5
+        "quantity": 5,
+        "description":"Small, plush bear with big, sparkly eyes."
     },
     {
         "name": "Tennis ball dog toy",
@@ -24,7 +26,8 @@
         "rating":3,
         "subCategory": "Stuffed Animal",
         "seller": "Petco",
-        "quantity": 10
+        "quantity": 10,
+        "description":"Classic teddy bear that has been loved by children for generations."
     },
     {
         "name": "Bird Toy",
@@ -33,7 +36,8 @@
         "rating": 4.5,
         "subCategory": "Bird Toy",
         "seller": "Bird Store",
-        "quantity": 12
+        "quantity": 12,
+        "description":"Lifelike plush tiger that is perfect for pretending to be a big cat."
     },
     {
         "name": "Reptile toy",
@@ -42,7 +46,8 @@
         "rating": 5,
         "subCategory": "Bird Toy",
         "seller": "Reptile toy",
-        "quantity": 3
+        "quantity": 3,
+        "description":"Realistic giraffe figure that is perfect for imaginative play."
     },
     {
         "name": "Small animal toy",
@@ -51,7 +56,8 @@
         "rating": 5,
         "subCategory": "Bird Toy",
         "seller": "Pet Supplies Plus",
-        "quantity": 6
+        "quantity": 6,
+        "description":"Soft and cuddly blue bunny that is perfect for snuggling."
     },
     {
         "name": "Fish toy",
@@ -60,7 +66,8 @@
         "rating": 4,
         "subCategory": "Reptile toy",
         "seller": "Petco",
-        "quantity": 15
+        "quantity": 15,
+        "description":"Classic teddy bear that has been loved by children for generations."
     },
     {
         "name": "Build-A-Bear Classic Teddy Bear",
@@ -69,7 +76,8 @@
         "rating": 4.5,
         "subCategory": "Reptile toy",
         "seller": "Build-A-Bear Workshop",
-        "quantity": 9
+        "quantity": 9,
+        "description":"Small, plush bear with big, sparkly eyes."
     },
     {
         "name": "Melissa & Doug Unicorn Puzzle",
@@ -78,6 +86,127 @@
         "rating": 4.1,
         "subCategory": "Reptile toy",
         "seller": "Amazon",
-        "quantity": 7
+        "quantity": 7,
+        "description":"Small, plush bear with big, sparkly eyes."
+    },
+    {
+        "name": "Dinosour",
+        "img": "https://imgtr.ee/images/2023/05/20/2NHCn.jpg",
+        "price": 965,
+        "rating": 3.1,
+        "subCategory": "Reptile toy",
+        "seller": "Farm Toys",
+        "quantity": 7,
+        "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
+    },
+    {
+        "name": "Duck",
+        "img": "https://imgtr.ee/images/2023/05/20/2x07l.jpg",
+        "price": 360,
+        "rating": 4.3,
+        "subCategory": "Educational Toys",
+        "seller": "Walmart",
+        "quantity": 8,
+        "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
+    },
+    {
+        "name": "Safari",
+        "img": "https://imgtr.ee/images/2023/05/20/2xa30.jpg",
+        "price": 400,
+        "rating": 5,
+        "subCategory": "Educational Toys",
+        "seller": "Kids-world",
+        "quantity": 12,
+        "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
+    },
+    {
+        "name": "Hen",
+        "img": "https://imgtr.ee/images/2023/05/20/2xwcU.jpg",
+        "price": 250,
+        "rating":3.5,
+        "subCategory": "Animal Figurines",
+        "seller": "Volnau",
+        "quantity": 5,
+        "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
+    },
+    {
+        "name": "Cat",
+        "img": "https://imgtr.ee/images/2023/05/20/2xm82.jpg",
+        "price": 150,
+        "rating":4.5,
+        "subCategory": "Animal Figurines",
+        "seller": "eBay",
+        "quantity": 4,
+        "description":"Interactive dinosaur that roars, blinks, and moves its head and tail."
+    },
+    {
+        "name": "Giraffe",
+        "img": "https://imgtr.ee/images/2023/05/20/2xNKi.jpg",
+        "price": 100,
+        "rating":4.3,
+        "subCategory": "Animal Figurines",
+        "seller": "AliExpress",
+        "quantity": 10,
+        "description":"Classic teddy bear that has been loved by children for generations."
+    },
+    {
+        "name": "dionosour kids",
+        "img": "https://imgtr.ee/images/2023/05/20/2xAVY.jpg",
+        "price": 180,
+        "rating":3.3,
+        "subCategory": "Animal Figurines",
+        "seller": "FAO Schwarz",
+        "quantity": 5,
+        "description":"Classic teddy bear that has been loved by children for generations."
+    },
+    {
+        "name": "dionosour kids",
+        "img": "https://imgtr.ee/images/2023/05/20/2xAVY.jpg",
+        "price": 280,
+        "rating":3.7,
+        "subCategory": "Animal Figurines",
+        "seller": "Barnes & Noble",
+        "quantity": 3,
+        "description":"Classic teddy bear that has been loved by children for generations."
+    },
+    {
+        "name": "Giraffe",
+        "img": "https://imgtr.ee/images/2023/05/20/2xC8s.jpg",
+        "price": 380,
+        "rating":2.7,
+        "subCategory": "Animal Figurines",
+        "seller": "Barnes & Noble",
+        "quantity": 4,
+        "description":"Classic teddy bear that has been loved by children for generations."
+    },
+    {
+        "name": "Pig",
+        "img": "https://imgtr.ee/images/2023/05/20/2xEIX.jpg",
+        "price": 480,
+        "rating":3.7,
+        "subCategory": "Animal Figurines",
+        "seller": "Learning Express",
+        "quantity":8,
+        "description":"Classic teddy bear that has been loved by children for generations."
+    },
+    {
+        "name": "Horse",
+        "img": "https://imgtr.ee/images/2023/05/20/2xuGV.jpg",
+        "price": 520,
+        "rating":5,
+        "subCategory": "Animal Figurines",
+        "seller": "The Disney Store",
+        "quantity":9,
+        "description":"Classic teddy bear that has been loved by children for generations."
+    },
+    {
+        "name": "Turtle",
+        "img": "https://imgtr.ee/images/2023/05/20/2xF1l.jpg",
+        "price": 930,
+        "rating":4,
+        "subCategory": "Animal Figurines",
+        "seller": "The Lego Store",
+        "quantity":14,
+        "description":"Classic teddy bear that has been loved by children for generations."
     }
 ]
