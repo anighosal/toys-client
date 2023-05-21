@@ -28,7 +28,7 @@ const UpdateToy = () => {
     };
     console.log(orders);
 
-    fetch("http://localhost:5000/mytoys", {
+    fetch("https://my-toy.vercel.app/mytoys", {
       method: "POST",
       headers: {
         "content-type": "application/json",

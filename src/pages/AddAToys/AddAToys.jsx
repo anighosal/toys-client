@@ -30,7 +30,7 @@ const AddAToys = () => {
     };
     console.log(orders);
 
-    fetch("http://localhost:5000/mytoys", {
+    fetch("https://my-toy.vercel.app/mytoys", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -110,13 +110,17 @@ const AddAToys = () => {
               className="input input-bordered"
             />
           </div>
-          <select className="select select-bordered w-full max-w-xs">
-            <option disabled selected>
-              Sub-Category
-            </option>
-            <option>Han Solo</option>
-            <option>Greedo</option>
-          </select>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Sub-Category</span>
+            </label>
+            <input
+              type="text"
+              name="subCategory"
+              placeholder="subCategory"
+              className="input input-bordered"
+            />
+          </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
