@@ -21,9 +21,9 @@ const AllToys = () => {
         id="searchInput"
         type="text"
         placeholder="search here ...."
-        onChange={(event) => {
-          setSearchItem(event.target.value);
-        }}
+        // onChange={(event) => {
+        //   setSearchItem(event.target.value);
+        // }}
         className="input input-bordered input-secondary w-full max-w-xs"
       />
       {allToys
