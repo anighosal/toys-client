@@ -8,12 +8,12 @@ const ShopCategory = () => {
   const [category, setCategory] = useState("Stuffed Animal");
   console.log(toys);
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch(`https://my-toy.vercel.app/category?category=${category}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         if (data.length) {
-          const filter = data.filter((toy) => toy.subCategory == category);
-          setToys(filter);
+          setToys(data);
         }
       });
   }, [category]);

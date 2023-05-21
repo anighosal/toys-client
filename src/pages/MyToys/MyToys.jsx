@@ -31,7 +31,7 @@ const MyToys = () => {
   };
 
   const handleUpdate = (id) => {
-    fetch(`http://localhost:5000/mytoys/${id}`, {
+    fetch(`https://my-toy.vercel.app/mytoys/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
