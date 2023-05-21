@@ -6,7 +6,15 @@ const Teddy = ({ toy }) => {
   return (
     <div className="card lg:w-96 bg-base-100 shadow-xl mt-5">
       <figure>
-        <img className="w-full" src={img} alt="Shoes" />
+        <img
+          className="w-full"
+          src={img}
+          alt="Shoes"
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">Name: {name}</h2>

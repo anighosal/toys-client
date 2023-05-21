@@ -16,6 +16,7 @@ import Toy from "../pages/Toy/Toy";
 import AddAToys from "../pages/AddAToys/AddAToys";
 import UpdateToy from "../pages/MyToys/UpdateToy";
 import Contact from "../pages/Contact/Contact";
+import About from "../pages/About/About";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "about",
+        element: <About></About>,
       },
       {
         path: "toydetails/:id",

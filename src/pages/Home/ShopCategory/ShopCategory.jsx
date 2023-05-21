@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Teddy from "../../Teddy/Teddy";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ShopCategory = () => {
   const [toys, setToys] = useState([]);
@@ -17,9 +19,21 @@ const ShopCategory = () => {
         }
       });
   }, [category]);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="mt-5 mb-5">
-      <h2 className="text-center text-3xl font-bold">Our Special Category</h2>
+      <h2
+        className="text-center text-3xl font-bold"
+        data-aos="fade-zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        Our Special Category
+      </h2>
       <Tabs className="text-center mt-8">
         <TabList className="gap-10">
           <Tab onClick={() => setCategory("Stuffed Animal")}>

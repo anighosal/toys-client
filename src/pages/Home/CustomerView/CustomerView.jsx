@@ -8,7 +8,15 @@ import Ratings from "../../Ratings/Ratings";
 const CustomerView = () => {
   return (
     <div className="mt-5">
-      <h2 className="text-center text-3xl font-bold">Our little client</h2>
+      <h2
+        className="text-center text-3xl font-bold"
+        data-aos="fade-zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        Our little client
+      </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5">
         <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
           <figure>

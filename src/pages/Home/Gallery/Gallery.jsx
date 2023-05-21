@@ -12,7 +12,15 @@ const images = [
 const Gallery = () => {
   return (
     <div className="bg-orange-300 mt-8">
-      <h2 className="text-center text-white font-bold text-4xl">Our Gallery</h2>
+      <h2
+        className="text-center text-white font-bold text-4xl"
+        data-aos="fade-zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        Our Gallery
+      </h2>
       <div className="mt-6 ">
         <Masonry columnsCount={3} gutter="15px">
           {images.map((image, i) => (
