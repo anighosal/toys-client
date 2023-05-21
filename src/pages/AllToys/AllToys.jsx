@@ -4,13 +4,20 @@ import AllToysCard from "./AllToysCard";
 const AllToys = () => {
   const [allToys, setAllToys] = useState([]);
   const [searchItem, setSearchItem] = useState("");
-  console.log(searchItem);
 
   useEffect(() => {
     fetch("https://my-toy.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   }, []);
+
+  const handleSearch = () => {
+    fetch(`https://my-toy.vercel.app/toySearchByName/${searchItem}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setAllToys(data);
+      });
+  };
   return (
     <div>
       <h2 className="text-center text-3xl font-bold text-orange-700">
@@ -21,28 +28,13 @@ const AllToys = () => {
         id="searchInput"
         type="text"
         placeholder="search here ...."
-        // onChange={(event) => {
-        //   setSearchItem(event.target.value);
-        // }}
+        onChange={(event) => {
+          setSearchItem(event.target.value);
+        }}
         className="input input-bordered input-secondary w-full max-w-xs"
       />
-      {allToys
-        .filter((value) => {
-          if (searchItem == "") {
-            return value;
-          } else if (
-            value.title.toLowerCase().includes(searchItem.toLowerCase())
-          ) {
-            return value;
-          }
-        })
-        .map((value) => {
-          <div>
-            <img src={value.img} alt="" />
-            <h3>{value.title}</h3>
-            <h3>{value.price}</h3>
-          </div>;
-        })}
+      <button onClick={handleSearch}>Search</button>
+
       <div className="overflow-x-auto bg-slate-400 lg:w-full mt-5">
         <table className="table lg:w-full">
           {/* head */}
