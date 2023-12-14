@@ -5,6 +5,8 @@ import Teddy from "../../Teddy/Teddy";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+// fetch(`https://my-toy.vercel.app/category?category=${category}`)
+
 const ShopCategory = () => {
   const [toys, setToys] = useState([]);
   const [category, setCategory] = useState("Stuffed Animal");
@@ -26,7 +28,7 @@ const ShopCategory = () => {
   return (
     <div className="mt-5 mb-5">
       <h2
-        className="text-center text-3xl font-bold"
+        className="text-center text-3xl font-bold text-white"
         data-aos="fade-zoom-in"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
@@ -37,15 +39,15 @@ const ShopCategory = () => {
       <Tabs className="text-center mt-8">
         <TabList className="gap-10">
           <Tab onClick={() => setCategory("Stuffed Animal")}>
-            <h2 className="text-2xl font-bold bg-orange-300">
+            <h2 className="text-2xl font-bold ">
               Stuffed animal cat
             </h2>
           </Tab>
           <Tab onClick={() => setCategory("Bird Toy")}>
-            <h2 className="text-2xl font-bold bg-orange-300">Bird Toy</h2>
+            <h2 className="text-2xl font-bold">Bird Toy</h2>
           </Tab>
           <Tab onClick={() => setCategory("Reptile toy")}>
-            <h2 className="text-2xl font-bold bg-orange-300">Fish toy</h2>
+            <h2 className="text-2xl font-bold">Fish toy</h2>
           </Tab>
         </TabList>
 

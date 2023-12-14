@@ -4,6 +4,14 @@
 
 
 .active{
-    color: rgb(232, 9, 9);
+    color: rgb(194, 137, 191);
+    font-size: large;
+    font-weight: 700;
+    
+  }
+  .default{
+    font-size: large;
+    font-weight: 700;
+    color: azure;
   }
 

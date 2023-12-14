@@ -9,7 +9,7 @@ const Teddy = ({ toy }) => {
         <img
           className="w-full"
           src={img}
-          alt="Shoes"
+          alt="toy"
           data-aos="fade-zoom-in"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
