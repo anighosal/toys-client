@@ -18,7 +18,7 @@ const ToyDetails = () => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">Name: {name}</h2>
-        <p>Price: {price}</p>
+        <p>Price: ${price}</p>
         <p className="text-red-500 ">Rating: {rating}</p>
       </div>
     </div>
