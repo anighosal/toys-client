@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProvider";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const AddAToys = () => {
   const { user } = useContext(AuthContext);
