@@ -12,16 +12,19 @@ const ToyDetails = () => {
       console.log(data);
     });
   return (
-    <div className="card card-side lg:w-1/2 mx-auto mt-8 bg-base-100 shadow-xl">
-      <figure>
-        <img className="pl-2" src={img} alt="Movie" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">Name: {name}</h2>
-        <p>Price: ${price}</p>
-        <p className="text-red-500 ">Rating: {rating}</p>
-      </div>
+<div className="mt-6 grid place-items-center">
+  <div className="shadow-xl w-1/3 rounded-lg card border border-gray-300 rounded-md overflow-hidden text-white">
+    <div className="h-[300px] w-full rounded-md">
+      <img className="h-full w-full p-4" src={img} alt="Movie" />
     </div>
+    <div className="card-body">
+      <h2 className="card-title">{name}</h2>
+      <p>Price: ${price}</p>
+      <p className="text-yellow-300">Rating: {rating}</p>
+    </div>
+  </div>
+</div>
+
   );
 };
 
