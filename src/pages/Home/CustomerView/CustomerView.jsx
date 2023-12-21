@@ -9,7 +9,7 @@ const CustomerView = () => {
   return (
     <div className="mt-5">
       <h2
-        className="text-center text-3xl font-bold"
+        className="text-center text-white text-3xl font-bold"
         data-aos="fade-zoom-in"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
@@ -18,52 +18,52 @@ const CustomerView = () => {
         Our little client
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-5">
-        <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
-          <figure>
-            <img src={img1} alt="Shoes" />
+        <div className="lg:w-96  shadow-xl mb-5 shadow-xl rounded-lg card border border-gray-300 rounded-md overflow-hidden">
+          <figure className="h-full">
+            <img className="card-image w-full h-full" src={img1} />
           </figure>
-          <div className="card-body">
+          <div className="text-white text-justify p-4">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto pariatur, praesentium ut laborum numquam totam, iste
               error labore reprehenderit sed commodi accusamus ab? Expedita
               nesciunt, voluptas quae fuga quis adipisci?{" "}
             </p>
-            <h2 className="font-bold text-center text-3xl">Smith</h2>
+            <h2 className="font-bold text-center text-2xl mt-3">Smith</h2>
             <div className="card-actions justify-center">
               <Ratings></Ratings>
             </div>
           </div>
         </div>
-        <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
-          <figure>
-            <img src={img2} alt="Shoes" />
+        <div className="lg:w-96 bg-base-100  shadow-xl mb-5 shadow-xl rounded-lg card border border-gray-300 rounded-md overflow-hidden">
+          <figure className="h-full">
+            <img className="card-image w-full h-full"  src={img2} />
           </figure>
-          <div className="card-body">
+          <div className="text-black text-justify p-4">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto pariatur, praesentium ut laborum numquam totam, iste
               error labore reprehenderit sed commodi accusamus ab? Expedita
               nesciunt, voluptas quae fuga quis adipisci?{" "}
             </p>
-            <h2 className="font-bold text-center text-3xl">Sandy</h2>
+            <h2 className="font-bold text-center text-2xl">Sandy</h2>
             <div className="card-actions justify-center">
               <Ratings></Ratings>
             </div>
           </div>
         </div>
-        <div className="card lg:w-96 bg-base-100 shadow-xl mb-5">
-          <figure>
-            <img src={img3} alt="Shoes" />
+        <div className="lg:w-96  shadow-xl mb-5 shadow-xl rounded-lg card border border-gray-300 rounded-md overflow-hidden">
+        <figure className="h-full">
+            <img className="card-image w-full h-full" src={img3} />
           </figure>
-          <div className="card-body">
+          <div className="text-white text-justify p-4">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto pariatur, praesentium ut laborum numquam totam, iste
               error labore reprehenderit sed commodi accusamus ab? Expedita
               nesciunt, voluptas quae fuga quis adipisci?{" "}
             </p>
-            <h2 className="font-bold text-center text-3xl">john</h2>
+            <h2 className="font-bold text-center text-2xl">john</h2>
             <div className="card-actions justify-center">
               <Ratings></Ratings>
             </div>
