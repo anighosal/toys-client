@@ -5,7 +5,7 @@ import MyToysRow from "./MyToysRow";
 const MyToys = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
-  const url = `https://my-toy.vercel.app/mytoys?email=${user?.email}`;
+  const url = `http://localhost:5000/mytoys?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -15,7 +15,7 @@ const MyToys = () => {
   const handleDelete = (id) => {
     const proceed = confirm("Are you sure delete this toy");
     if (proceed) {
-      fetch(`https://my-toy.vercel.app/mytoys/${id}`, {
+      fetch(`http://localhost:5000/mytoys/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -31,7 +31,7 @@ const MyToys = () => {
   };
 
   const handleUpdate = (id) => {
-    fetch(`https://my-toy.vercel.app/mytoys/${id}`, {
+    fetch(`http://localhost:5000/mytoys/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
@@ -52,25 +52,23 @@ const MyToys = () => {
   };
   return (
     <div>
-      <h2 className="text-center font-bold text-2xl text-purple-600">
+      <h2 className="text-center font-bold text-2xl text-white mt-5 mb-5">
         my toys
       </h2>
-      <div className="overflow-x-auto w-full">
-        <table className="table w-full">
+      <div className="overflow-x-auto  lg:w-full mt-5  mb-4 ">
+        <table className=" w-full">
           {/* head */}
-          <thead>
-            <tr>
-              <th>Picture</th>
-              <th>Name</th>
-              <th>title</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Email</th>
-              <th>Rating</th>
-              <th>Details</th>
-              <th>Update</th>
-              <th>Delete</th>
-            </tr>
+          <thead className="bg-white text-black gap-x-5">
+          <tr>
+      <th className="w-1/8">Picture</th>
+      <th className="w-1/8">Email</th>
+      <th className="w-1/8">Price</th>
+      <th className="w-1/8">Quantity</th>
+      <th className="w-1/8">Rating</th>
+      <th className="w-1/8">Details</th>
+      <th className="w-1/8">Update</th>
+      <th className="w-1/8">Delete</th>
+    </tr>
           </thead>
           <tbody>
             {bookings.map((booking) => (

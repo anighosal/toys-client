@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPlusCircle, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
@@ -7,56 +8,34 @@ const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
     customerName,
     email,
     price,
-    subCategory,
     photo,
     title,
     quantity,
     rating,
     description,
   } = booking;
-  console.log(photo);
 
   return (
-    <tr>
+    <tr className="shadow-xl border  border-gray-300 rounded-lg text-white rounded-md mt-4">
       <td>
         <div className="avatar">
-          <div className="rounded w-24 h-24">
-            <img src={photo} alt="Avatar Tailwind CSS Component" />
+          <div className="rounded p-3 w-24 h-24">
+            <img src={photo} alt={title} />
           </div>
         </div>
       </td>
-      <td>{customerName}</td>
-      <td>{title}</td>
-      <td className="text-blue-500 font-bold ">$ {price}</td>
-      <td>{quantity}</td>
-      <td>{email}</td>
-      <td className="text-red-500 font-bold ">{rating}</td>
-      <td>{description}</td>
-      <th>
+      <td className="w-1/6">{email}</td>
+      <td className="font-bold w-1/6">$ {price}</td>
+      <td className="w-1/6">{quantity}</td>
+      <td className="text-yellow-400 font-bold w-1/6">{rating}</td>
+      <td className="w-1/6">{description}</td>
+      <th className="w-1/6">
         <Link to={`/toyupdate/${_id}`}>
-          <button className="btn btn-outline btn-success">Update</button>
+          <FaPlusCircle className="text-green-400 w-full"></FaPlusCircle>
         </Link>
       </th>
-      <th>
-        <button
-          onClick={() => handleDelete(_id)}
-          className="btn btn-circle btn-sm "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
+      <th className="w-1/6">
+        <FaTrash className="w-full" onClick={() => handleDelete(_id)}></FaTrash>
       </th>
     </tr>
   );

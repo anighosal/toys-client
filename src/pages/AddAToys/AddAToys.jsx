@@ -10,16 +10,17 @@ const AddAToys = () => {
     const form = event.target;
 
     const email = form.email.value;
-
     const photo = form.photo.value;
     const price = form.price.value;
     const quantity = form.quantity.value;
-    const name = form.name.value;
+    const title = form.title.value; // Corrected the input name
     const rating = form.rating.value;
     const subCategory = form.subCategory.value;
     const description = form.description.value;
+    console.log("Title:", title); 
+
     const orders = {
-      customerName: name,
+      customerName: user?.displayName,
       email,
       price,
       rating,
@@ -27,10 +28,12 @@ const AddAToys = () => {
       subCategory,
       description,
       photo,
+      title,
     };
+
     console.log(orders);
 
-    fetch("https://my-toy.vercel.app/mytoys", {
+    fetch("http://localhost:5000/mytoys", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -44,33 +47,32 @@ const AddAToys = () => {
   };
   return (
     <div>
-      <h2 className="text-center">Add Your Choice: {name}</h2>
+       <h2 className="text-center">Add Your Choice: {user?.displayName}</h2>
       <form onSubmit={handleBookService}>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Title</span>
-            </label>
-            <input
-              type="text"
-              name="title"
-              placeholder="title"
-              defaultValue={name}
-              className="input input-bordered"
-            />
-          </div>
-          <div className="form-control">
+        {/* <div className="form-control">
+          <label className="label">
+            <span className="label-text">Title</span>
+          </label>
+          <input
+            type="text"
+            name="title"
+            placeholder="title"
+            className="input input-bordered"
+          />
+        </div> */}
+          {/* <div className="form-control">
             <label className="label">
               <span className="label-text">Seller Name</span>
             </label>
             <input
               type="text"
-              name="seller"
+              name="customerName"
               defaultValue={user?.displayName}
-              placeholder="sellername"
+              placeholder="name"
               className="input input-bordered"
             />
-          </div>
+          </div> */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">Photo</span>
