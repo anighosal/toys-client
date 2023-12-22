@@ -5,7 +5,7 @@ const PlayGround = () => {
   return (
     <div className="mt-5">
       <h2
-        className="text-center text-red-500 text-3xl font-bold"
+        className="text-center text-white text-3xl font-bold"
         data-aos="fade-zoom-in"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
