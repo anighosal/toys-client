@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 
@@ -6,13 +7,13 @@ const Toy = () => {
   console.log(toys);
   const { name, _id, img, quantity, price, rating, description, seller } = toys;
 
-  fetch("https://my-toy.vercel.app/products/${params.id}")
+  fetch("http://localhost:5000/${params.id}")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
     });
   return (
-    <div className="card card-side w-1/2 mx-auto mt-8 bg-base-100 shadow-xl">
+    <div className="lg:w-1/2 w-full mt-6 shadow-xl rounded-lg ">
       <figure>
         <img className="pl-2" src={img} alt="Movie" />
       </figure>
@@ -29,5 +30,4 @@ const Toy = () => {
     </div>
   );
 };
-
 export default Toy;

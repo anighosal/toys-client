@@ -29,7 +29,7 @@ const features = [
 
 const Service = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 rounded-lg ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 rounded-lg lg:p-0 p-2">
       {features.map((feature, index) => (
         <div key={index} className={`p-4 shadow-md  ${feature.bgColor}`}>
           <img

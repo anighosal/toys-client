@@ -12,7 +12,7 @@ const NavBar = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className="navbar ">
+    <div className="navbar mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
@@ -33,7 +33,8 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="text-black menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="text-white menu menu-compact dropdown-content mt-3 p-2 shadow bg-sky-500 rounded-box w-52"
+
           >
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "default")}

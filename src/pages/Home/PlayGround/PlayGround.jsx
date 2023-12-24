@@ -3,7 +3,7 @@ import play from "../../../assets/playground.jpg";
 
 const PlayGround = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 lg:px-0 px-5">
       <h2
         className="text-center text-white text-3xl font-bold"
         data-aos="fade-zoom-in"

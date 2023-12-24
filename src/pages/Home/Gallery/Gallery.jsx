@@ -21,7 +21,7 @@ const toys = [
 
 const Gallery = () => {
   return (
-    <div className="mt-8">
+    <div className="mt-8 lg:px-0 px-5">
       <div className="mt-6 shadow-xl rounded-lg card gap-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {toys.map((toy, i) => (
           <div

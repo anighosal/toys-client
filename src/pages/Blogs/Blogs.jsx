@@ -3,11 +3,11 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="mt-10 border-spacing-2">
-      <h2 className="text-red-500 text2xl font-bold ">
+      <h2 className="text-red-500 text-2xl font-bold ">
         Q: What is an access token and refresh token? How do they work and where
         should we store them on the client-side?
       </h2>
-      <p className="text-blue-400 text-lg font-semibold">
+      <p className="text-white text-lg font-semibold">
         Ans: 1.Token which is used to give users access to information and
         resources once their credentials are validated is called access token.
         token which allows the user to get a new access token without needing to
@@ -20,10 +20,10 @@ const Blogs = () => {
         local storage or browser memory.
       </p>{" "}
       <br />
-      <h2 className="text-red-500 text2xl font-bold ">
+      <h2 className="text-red-500 text-2xl font-bold ">
         Q: Compare SQL and NoSQL databases?
       </h2>
-      <p className="text-blue-400 text-lg font-semibold">
+      <p className="text-white text-lg font-semibold">
         Ans: .SQL databases are primarily called Relational Databases and NoSQL
         databases are primarily called non-relational databases SQL databases
         are vertically scalable most of the situations. On the other hand NoSQL
@@ -32,10 +32,10 @@ const Blogs = () => {
         or wide-column stores
       </p>
       <br />
-      <h2 className="text-red-500 text2xl font-bold ">
+      <h2 className="text-red-500 text-2xl font-bold ">
         Q: What is express js? What is Nest JS ?
       </h2>
-      <p className="text-blue-400 text-lg font-semibold">
+      <p className="text-white text-lg font-semibold">
         Ans: Express: Express is a very popular framework, and it is used by a
         wide variety of developers to build all sorts of web applications. It is
         easy to learn and use, and it provides a robust set of features for
@@ -56,10 +56,10 @@ const Blogs = () => {
         be a better option.
       </p>
       <br />
-      <h2 className="text-red-500 text2xl font-bold ">
+      <h2 className="text-red-500 text-2xl font-bold ">
         What is MongoDB aggregate and how does it work?
       </h2>
-      <p className="text-blue-400 text-lg font-semibold">
+      <p className="text-white text-lg font-semibold">
         Ans: MongoDB aggregation is a process of transforming and summarizing
         data stored in MongoDB collections. It is a powerful tool that can be
         used to perform a variety of operations on data, such as grouping

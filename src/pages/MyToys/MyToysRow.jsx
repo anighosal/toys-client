@@ -17,7 +17,7 @@ const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
 
   return (
     <tr className="shadow-xl border  border-gray-300 rounded-lg text-white rounded-md mt-4">
-      <td>
+      <td className="">
         <div className="avatar">
           <div className="rounded p-3 w-24 h-24">
             <img src={photo} alt={title} />
@@ -30,8 +30,8 @@ const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
       <td className="text-yellow-400 font-bold w-1/6">{rating}</td>
       <td className="w-1/6">{description}</td>
       <th className="w-1/6">
-        <Link to={`/toyupdate/${_id}`}>
-          <FaPlusCircle className="text-green-400 w-full"></FaPlusCircle>
+      <Link to={`/toyupdate/${_id}`} className="text-green-400 w-full">
+          <FaPlusCircle />
         </Link>
       </th>
       <th className="w-1/6">

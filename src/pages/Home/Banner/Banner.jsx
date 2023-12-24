@@ -3,7 +3,7 @@ import banner from "../../../assets/Disguisimals_Slide-1.jpg";
 
 const Banner = () => {
   return (
-    <div className="relative mt-5">
+    <div className="relative mt-5 lg:p-0 p-2">
       <img className="rounded-xl w-full" src={banner} alt="Banner" />
 
       <div className="absolute top-1/2 left-4 sm:transform sm:-translate-y-1/7 text-center">

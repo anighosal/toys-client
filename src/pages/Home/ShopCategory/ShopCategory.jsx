@@ -26,7 +26,7 @@ const ShopCategory = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="mt-5 mb-5">
+    <div className="mt-5 mb-5 ">
       <h2
         className="text-center text-3xl font-bold text-white"
         data-aos="fade-zoom-in"
@@ -36,7 +36,7 @@ const ShopCategory = () => {
       >
         Our Special Category
       </h2>
-      <Tabs className="text-center mt-8">
+      <Tabs className="text-center mt-8 ">
         <TabList className="gap-10">
           <Tab onClick={() => setCategory("Stuffed Animal")}>
             <h2 className="text-2xl font-bold ">

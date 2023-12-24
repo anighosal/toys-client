@@ -7,7 +7,7 @@ const AllToysCard = ({ toys }) => {
 
   return (
     <tr className="shadow-xl border  border-gray-300 rounded-lg text-white rounded-md mt-4 ">
-      <td className="mb-4 ">
+      <td className="mb-4">
         <div className="avatar">
           <div className="rounded w-24 p-3 h-24">
             <img src={img} alt={name} />
@@ -15,18 +15,18 @@ const AllToysCard = ({ toys }) => {
         </div>
       </td>
 
-      <td className="mb-4 mt-4 p-4">{name}</td>
-      <td>{subCategory}</td>
-      <td className="mb-4 mt-4">$ {price}</td>
-      <td className="mb-4 mt-4 ">{quantity}</td>
-      <td className="text-yellow-400 mb-4 mt-4">{rating}</td>
+      <td className="w-1/6">{name}</td>
+      <td className="w-1/6">{subCategory}</td>
+      <td className="w-1/6">$ {price}</td>
+      <td className="w-1/6">{quantity}</td>
+      <td className="text-yellow-400 w-1/6">{rating}</td>
 
       {/* Move the seller column to the right side */}
-      <td className="mb-4 mt-4 ml-5">{seller}</td>
+      <td className="w-1/6">{seller}</td>
 
-      <th className="mb-4">
+      <th className="w-1/6">
         <Link to={`/toy/${_id}`}>
-          <FaArrowRight className="text-sky-700 w-full w-1/7"></FaArrowRight>
+          <FaArrowRight className="text-sky-700 w-full "></FaArrowRight>
         </Link>
       </th>
     </tr>

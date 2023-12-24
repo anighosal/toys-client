@@ -7,7 +7,7 @@ import Ratings from "../../Ratings/Ratings";
 
 const CustomerView = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 lg:px-0 px-5">
       <h2
         className="text-center text-white text-3xl font-bold"
         data-aos="fade-zoom-in"

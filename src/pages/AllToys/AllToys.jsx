@@ -43,16 +43,16 @@ const AllToys = () => {
       <div className="overflow-x-auto  lg:w-full mt-5 text-black mb-4 ">
         <table className="lg:w-full">
           {/* head */}
-          <thead className="bg-white">
+          <thead className="bg-white text-black gap-x-5">
             <tr>
-              <th className="">Picture</th>
-              <th className="w-1/5">Name</th>
-              <th className="w-1/7">SubCategory</th>
-              <th className="w-1/7">Price</th>
-              <th className="w-1/7">Quantity</th>
-              <th className="w-1/7">Rating</th>
-              <th className="w-1/7">Seller</th>
-              <th className="w-1/7">View Details</th>
+              <th className="w-1/8">Picture</th>
+              <th className="w-1/8">Name</th>
+              <th className="w-1/8">SubCategory</th>
+              <th className="w-1/8">Price</th>
+              <th className="w-1/8">Quantity</th>
+              <th className="w-1/8">Rating</th>
+              <th className="w-1/8">Seller</th>
+              <th className="w-1/8">View Details</th>
             </tr>
           </thead>
           <tbody>
