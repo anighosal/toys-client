@@ -14,7 +14,7 @@ const ToyDetails = () => {
     });
   return (
 <div className=" grid place-items-center mt-8 lg:px-0 px-5 text-white">
-  <div className="shadow-xl  h-full lg:w-1/2 w-full rounded-lg card border border-gray-300 rounded-md overflow-hidden text-white">
+  <div className="shadow-xl  h-full lg:w-1/2 w-full  card border border-gray-300 rounded-md overflow-hidden text-white">
     <div className="w-full rounded-md">
       <img className="p-2 lg:p-4 w-full" src={img} alt="Movie" />
     </div>

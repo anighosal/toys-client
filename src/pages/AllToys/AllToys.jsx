@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AllToysCard from "./AllToysCard";
+import AllToysSmallReview from "./AllToysSmallReview";
 
 const AllToys = () => {
   const [allToys, setAllToys] = useState([]);
@@ -24,8 +25,7 @@ const AllToys = () => {
       <h2 className="text-center text-3xl font-bold text-white">
         Our Toys Collection
       </h2>
-
-      <div className="mx-auto flex justify-center gap-2 ">
+      <div className="flex flex-col md:flex-row justify-center gap-2 mt-4">
         <input
           id="searchInput"
           type="text"
@@ -33,9 +33,12 @@ const AllToys = () => {
           onChange={(event) => {
             setSearchItem(event.target.value);
           }}
-          className="input input-bordered input-secondary w-full max-w-xs  mt-5"
+          className="input input-bordered input-secondary w-full md:max-w-xs"
         />
-        <button className="text-white" onClick={handleSearch}>
+        <button
+          className="text-white bg-blue-500 px-4 py-2 rounded-md"
+          onClick={handleSearch}
+        >
           Search
         </button>
       </div>
@@ -62,6 +65,7 @@ const AllToys = () => {
           </tbody>
         </table>
       </div>
+      <AllToysSmallReview toys={allToys}></AllToysSmallReview>
     </div>
   );
 };

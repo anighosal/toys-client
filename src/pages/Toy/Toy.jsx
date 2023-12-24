@@ -13,20 +13,23 @@ const Toy = () => {
       console.log(data);
     });
   return (
-    <div className="lg:w-1/2 w-full mt-6 shadow-xl rounded-lg ">
-      <figure>
-        <img className="pl-2" src={img} alt="Movie" />
-      </figure>
+    <div  className=" grid place-items-center mt-8 lg:px-0 px-5 text-white">
+      <div className="shadow-xl  h-full lg:w-1/2 w-full  card border border-gray-300 rounded-md overflow-hidden text-white">
+      <div className="w-full rounded-md">
+      <img className="p-2 lg:p-4 w-full" src={img} alt="Movie" />
+    </div>
       <div className="card-body">
-        <h2 className="card-title">Name: {name}</h2>
-        <h2>Detail: {description}</h2>
-        <h2>{seller}</h2>
-        <h2>Rating: {rating}</h2>
+        <h2 className="card-title">{name}</h2>
+        <h2>Details: {description}</h2>
+        <h2>Seller: {seller}</h2>
+       
 
         <p>Price: {price}</p>
         <p>Quantity: {quantity}</p>
-        <p className="text-red-500 ">Rating: {rating}</p>
+        <p className="text-yellow-400 ">Rating: {rating}</p>
       </div>
+      </div>
+    
     </div>
   );
 };
