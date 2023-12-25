@@ -27,7 +27,7 @@ const UpdateToy = () => {
       photo,
     };
 
-    fetch("https://toys-client.vercel.app/mytoys", {
+    fetch("https://toys-server-omega.vercel.app/mytoys", {
       method: "POST",
       headers: {
         "content-type": "application/json",

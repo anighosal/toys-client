@@ -7,7 +7,7 @@ const ToyDetails = () => {
   console.log(toy);
   const { name, _id, img, quantity, price, rating } = toy;
 
-  fetch("https://toys-client.vercel.app/${params.id}")
+  fetch("https://toys-server-omega.vercel.app/${params.id}")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -16,7 +16,7 @@ const ToyDetails = () => {
 <div className=" grid place-items-center mt-8 lg:px-0 px-5 text-white">
   <div className="shadow-xl  h-full lg:w-1/2 w-full  card border border-gray-300 rounded-md overflow-hidden text-white">
     <div className="w-full rounded-md">
-      <img className="p-2 lg:p-4 w-full" src={img} alt="Movie" />
+      <img className="p-2 lg:p-4 w-full" src={img}  />
     </div>
     <div className="card-body">
       <h2 className="card-title">{name}</h2>
