@@ -6,7 +6,7 @@ import { FaArrowRight, FaBeer } from "react-icons/fa";
 const Teddy = ({ toy }) => {
   const { _id, name, price, rating, img } = toy;
   return (
-    <div className="mt-6 shadow-xl rounded-lg card border border-gray-300 rounded-md overflow-hidden text-white">
+    <div className="mt-6 shadow-xl card border border-gray-300 rounded-md overflow-hidden text-white">
       <div className="">
     <div className="h-[300px] w-full rounded-md">
     <img

@@ -7,7 +7,7 @@ const ToyDetails = () => {
   console.log(toy);
   const { name, _id, img, quantity, price, rating } = toy;
 
-  fetch("http://localhost:5000/${params.id}")
+  fetch("https://toys-client.vercel.app/${params.id}")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
