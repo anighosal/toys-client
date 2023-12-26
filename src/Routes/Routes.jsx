@@ -67,7 +67,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/product/${params.id}`),
+          fetch(`https://toys-server-d02m4dv6g-anighosal.vercel.app/product/${params.id}`),
       },
       {
         path: "toy/:id",
@@ -77,19 +77,19 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/product/${params.id}`),
+          fetch(`https://toys-server-d02m4dv6g-anighosal.vercel.app/product/${params.id}`),
       },
       {
         path: "toyupdate/:id",
         element: <UpdateToy></UpdateToy>,
         loader: ({ params }) =>
-          fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/product/${params.id}`),
+          fetch(`https://toys-server-d02m4dv6g-anighosal.vercel.app/product/${params.id}`),
       },
       {
         path: "toyupdate/:id",
         element: <UpdateToy></UpdateToy>,
         loader: ({ params }) =>
-          fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/products/${params.id}`),
+          fetch(`https://toys-server-d02m4dv6g-anighosal.vercel.app/products/${params.id}`),
       },
     ],
   },

@@ -29,7 +29,7 @@ const UpdateToy = () => {
       photo,
     };
 
-    fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/myToys/${id}`, {
+    fetch(`https://toys-server-d02m4dv6g-anighosal.vercel.app/myToys/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
