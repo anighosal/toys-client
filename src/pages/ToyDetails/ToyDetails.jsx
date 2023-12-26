@@ -7,11 +7,7 @@ const ToyDetails = () => {
   console.log(toy);
   const { name, _id, img, quantity, price, rating } = toy;
 
-  fetch("https://toys-server-omega.vercel.app/product/${params.id}")
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-    });
+
   return (
 <div className=" grid place-items-center mt-8 lg:px-0 px-5 text-white">
   <div className="shadow-xl  h-full lg:w-1/2 w-full  card border border-gray-300 rounded-md overflow-hidden text-white">
