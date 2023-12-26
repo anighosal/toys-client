@@ -31,7 +31,7 @@ const AddAToys = () => {
       title,
     };
 
-    fetch("https://toys-server-d02m4dv6g-anighosal.vercel.app/mytoys", {
+    fetch("https://toys-server-omega.vercel.app/mytoys", {
       method: "POST",
       headers: {
         "content-type": "application/json",
