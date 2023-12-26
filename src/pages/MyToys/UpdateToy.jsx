@@ -2,10 +2,12 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useParams } from "react-router-dom";
 
 const UpdateToy = () => {
   const { user } = useContext(AuthContext);
- 
+ const {id} = useParams()
+ console.log(id)
 
   const handleUpdateService = (event) => {
     event.preventDefault();
@@ -27,8 +29,8 @@ const UpdateToy = () => {
       photo,
     };
 
-    fetch("https://toys-server-omega.vercel.app/mytoys", {
-      method: "POST",
+    fetch(`https://toys-server-omega.vercel.app/myToys/${id}`, {
+      method: "PATCH",
       headers: {
         "content-type": "application/json",
       },
