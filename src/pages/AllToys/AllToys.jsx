@@ -7,13 +7,13 @@ const AllToys = () => {
   const [searchItem, setSearchItem] = useState("");
 
   useEffect(() => {
-    fetch("https://toys-server-omega.vercel.app/products")
+    fetch("https://toys-server-mjxlqqw0e-anighosal.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   }, []);
 
   const handleSearch = () => {
-    fetch(`https://toys-server-omega.vercel.app/toySearchByName/${searchItem}`)
+    fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/toySearchByName/${searchItem}`)
       .then((res) => res.json())
       .then((data) => {
         setAllToys(data);

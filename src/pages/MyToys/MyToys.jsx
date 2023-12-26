@@ -5,7 +5,7 @@ import MyToysRow from "./MyToysRow";
 const MyToys = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
-  const url = `https://toys-server-omega.vercel.app/mytoys?email=${user?.email}`;
+  const url = `https://toys-server-mjxlqqw0e-anighosal.vercel.app/mytoys?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -15,7 +15,7 @@ const MyToys = () => {
   const handleDelete = (id) => {
     const proceed = confirm("Are you sure delete this toy");
     if (proceed) {
-      fetch(`https://toys-server-omega.vercel.app/mytoys/${id}`, {
+      fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/mytoys/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -31,7 +31,7 @@ const MyToys = () => {
   };
 
   const handleUpdate = (id) => {
-    fetch(`https://toys-server-omega.vercel.app/mytoys/${id}`, {
+    fetch(`https://toys-server-mjxlqqw0e-anighosal.vercel.app/mytoys/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
