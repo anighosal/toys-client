@@ -7,3 +7,5 @@
 5.Deleting from my toy with server side delete method deletes that toy
 
 live-link: https://animal-toys-c416c.web.app/
+frontend-vercel-link: https://toys-client.vercel.app/
+backen-vercel-link:https://toys-server-omega.vercel.app/

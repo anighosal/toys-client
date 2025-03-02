@@ -12,12 +12,21 @@ const AllToys = () => {
       .then((data) => setAllToys(data));
   }, []);
 
-  const handleSearch = () => {
-    fetch(`https://toys-server-omega.vercel.app/toySearchByName/${searchItem}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setAllToys(data);
-      });
+  const handleSearch = async () => {
+    try {
+      const response = await fetch(
+        `https://toys-server-omega.vercel.app/toySearchByName/${searchItem}`
+      );
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const data = await response.json();
+      setAllToys(data);
+    } catch (error) {
+      console.error("Error fetching search results:", error);
+    }
   };
 
   return (
