@@ -1,6 +1,7 @@
 <!-- 5 Bullets point -->
 
-This is a mern based E-Commerce Website with Authentication.
+# This is a mern based E-Commerce Website with Authentication.
+
 Users can easily see all products.User Can add many toys show that
 My tows page
 
